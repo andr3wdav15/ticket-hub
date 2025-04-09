@@ -1,0 +1,24 @@
+<app-navbar></app-navbar>
+<div class="page-container">
+  <div class="content-layout">
+    <div class="left-column">
+      <app-event-details></app-event-details>
+    </div>
+    <div class="right-column narrower-container">
+      <ng-container *ngIf="!purchaseCompleted; else showConfirmation">
+        <app-ticket-form
+          (purchaseComplete)="onPurchaseComplete($event)"
+        ></app-ticket-form>
+      </ng-container>
+      <ng-template #showConfirmation>
+        <app-ticket-confirmation
+          [customerName]="customerInfo.name"
+          [customerEmail]="customerInfo.email"
+          [ticketQuantity]="customerInfo.quantity"
+        >
+        </app-ticket-confirmation>
+      </ng-template>
+    </div>
+  </div>
+</div>
+<app-footer></app-footer>

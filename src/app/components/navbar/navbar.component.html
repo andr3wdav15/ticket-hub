@@ -1,0 +1,132 @@
+<mat-toolbar class="navbar">
+  <span class="brand-name">TicketHub</span>
+  <button mat-button class="nav-button" [matMenuTriggerFor]="sportsMenu">
+    Sports<mat-icon>arrow_drop_down</mat-icon>
+  </button>
+  <button mat-button class="nav-button" [matMenuTriggerFor]="concertsMenu">
+    Concerts<mat-icon>arrow_drop_down</mat-icon>
+  </button>
+  <button mat-button class="nav-button" [matMenuTriggerFor]="theaterMenu">
+    Theater<mat-icon>arrow_drop_down</mat-icon>
+  </button>
+  <button mat-button class="nav-button" [matMenuTriggerFor]="festivalsMenu">
+    Festivals<mat-icon>arrow_drop_down</mat-icon>
+  </button>
+  <button mat-button class="nav-button" [matMenuTriggerFor]="citiesMenu">
+    Cities<mat-icon>arrow_drop_down</mat-icon>
+  </button>
+  <span class="spacer"></span>
+  <button mat-button class="nav-button">Explore</button>
+  <button mat-button class="nav-button" [matMenuTriggerFor]="sellMenu">
+    Sell<mat-icon>arrow_drop_down</mat-icon>
+  </button>
+  <button mat-button class="nav-button">Favourites</button>
+  <button mat-button class="nav-button" [matMenuTriggerFor]="myTicketsMenu">
+    My Tickets<mat-icon>arrow_drop_down</mat-icon>
+  </button>
+  <button mat-button class="nav-button" [matMenuTriggerFor]="profileMenu">
+    <mat-icon>arrow_drop_down</mat-icon>
+    <mat-icon class="profile-icon">account_circle</mat-icon>
+  </button>
+</mat-toolbar>
+
+<mat-menu class="scrollable-menu" #sportsMenu="matMenu">
+  <button mat-menu-item>MLB</button>
+  <button mat-menu-item>NBA</button>
+  <button mat-menu-item>NFL</button>
+  <button mat-menu-item>NHL</button>
+  <button mat-menu-item>MLS</button>
+  <button mat-menu-item>Tennis</button>
+  <button mat-menu-item>Golf</button>
+  <button mat-menu-item>Rodeo</button>
+  <button mat-menu-item>United States F1 GP</button>
+  <button mat-menu-item>Fight</button>
+  <button mat-menu-item>Rugby</button>
+  <button mat-menu-item>Horse Racing</button>
+  <button mat-menu-item>Cricket</button>
+  <button mat-menu-item>College Sports</button>
+  <button mat-menu-item>Volleyball</button>
+  <button mat-menu-item>All Sports</button>
+</mat-menu>
+
+<mat-menu class="scrollable-menu" #concertsMenu="matMenu">
+  <button mat-menu-item>Alternative and Indie</button>
+  <button mat-menu-item>Club and Dance</button>
+  <button mat-menu-item>Country</button>
+  <button mat-menu-item>Experimental</button>
+  <button mat-menu-item>Folk</button>
+  <button mat-menu-item>Funk</button>
+  <button mat-menu-item>Heavy Metal</button>
+  <button mat-menu-item>Latin Music</button>
+  <button mat-menu-item>Pop</button>
+  <button mat-menu-item>Rap/Hip-Hop</button>
+  <button mat-menu-item>R&B and Soul Music</button>
+  <button mat-menu-item>Reggae</button>
+  <button mat-menu-item>Religious</button>
+  <button mat-menu-item>Rock Music</button>
+  <button mat-menu-item>Vocal</button>
+  <button mat-menu-item>All Concerts</button>
+</mat-menu>
+
+<mat-menu class="scrollable-menu" #theaterMenu="matMenu">
+  <button mat-menu-item>Ballet & Dance</button>
+  <button mat-menu-item>Broadway Shows</button>
+  <button mat-menu-item>Classical Music & Opera</button>
+  <button mat-menu-item>Comedy</button>
+  <button mat-menu-item>Conferences & Speaking Tours</button>
+  <button mat-menu-item>Family</button>
+  <button mat-menu-item>Festivals & Fairs</button>
+  <button mat-menu-item>Musicals</button>
+  <button mat-menu-item>Plays</button>
+  <button mat-menu-item>All Theater</button>
+</mat-menu>
+
+<mat-menu class="scrollable-menu" #festivalsMenu="matMenu">
+  <button mat-menu-item>BottleRock Napa Valley</button>
+  <button mat-menu-item>CMA Fest</button>
+  <button mat-menu-item>Coachella Music Festival</button>
+  <button mat-menu-item>Dreamville Festival</button>
+  <button mat-menu-item>Jonijam</button>
+  <button mat-menu-item>Lovers & Friends Festival</button>
+  <button mat-menu-item>Rolling Loud</button>
+  <button mat-menu-item>Stagecoach Country Music Festival</button>
+  <button mat-menu-item>Summerfest</button>
+  <button mat-menu-item>Tortuga Music Festival</button>
+  <button mat-menu-item>Two Step Inn Festival</button>
+  <button mat-menu-item>Under The Big Sky Festival</button>
+  <button mat-menu-item>When We Were Young</button>
+  <button mat-menu-item>All Festivals</button>
+</mat-menu>
+
+<mat-menu class="scrollable-menu" #citiesMenu="matMenu">
+  <button mat-menu-item>Toronto</button>
+  <button mat-menu-item>Vancouver</button>
+  <button mat-menu-item>Montreal</button>
+  <button mat-menu-item>Halifax</button>
+  <button mat-menu-item>Edmonton</button>
+  <button mat-menu-item>Calgary</button>
+  <button mat-menu-item>Winnipeg</button>
+  <button mat-menu-item>London, Ontario</button>
+  <button mat-menu-item>Hamilton</button>
+  <button mat-menu-item>Quebec City</button>
+  <button mat-menu-item>Ottawa</button>
+</mat-menu>
+
+<mat-menu class="scrollable-menu" #sellMenu="matMenu">
+  <button mat-menu-item>Sell Tickets</button>
+  <button mat-menu-item>My Tickets</button>
+  <button mat-menu-item>My Sales</button>
+</mat-menu>
+
+<mat-menu class="scrollable-menu" #myTicketsMenu="matMenu">
+  <button mat-menu-item>Orders</button>
+  <button mat-menu-item>My Listings</button>
+  <button mat-menu-item>My Sales</button>
+  <button mat-menu-item>Payments</button>
+</mat-menu>
+
+<mat-menu class="scrollable-menu" #profileMenu="matMenu">
+  <button mat-menu-item>My Hub</button>
+  <button mat-menu-item>Settings</button>
+  <button mat-menu-item>Sign Out</button>
+</mat-menu>

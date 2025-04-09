@@ -1,0 +1,120 @@
+@import "@angular/material/prebuilt-themes/rose-red.css";
+
+:root {
+  --primary-color: #c2185b;
+  --primary-lighter-color: #e91e63;
+  --primary-darker-color: #880e4f;
+  --accent-color: #ffb1c2;
+  --accent-lighter-color: #ffc2cf;
+  --warn-color: #ba1a1a;
+  --text-dark: #333333;
+  --text-medium: #666666;
+  --text-light: #ffffff;
+  --background-light: #fce4ec;
+  --background-lighter: #ffffff;
+  --background-lightest: #fff5f8;
+  --shadow-color: rgba(136, 14, 79, 0.15);
+}
+
+html,
+body {
+  height: 100%;
+}
+
+body {
+  margin: 0;
+  font-family: Roboto, "Helvetica Neue", sans-serif;
+}
+
+.scrollable-menu {
+  max-height: 37.5rem !important;
+  overflow-y: auto !important;
+}
+
+.component-container {
+  max-width: 31.25rem;
+  width: 100%;
+  margin: 2rem auto;
+  padding: 2rem;
+  border-radius: 0.5rem;
+  box-shadow: 0 0.25rem 0.75rem var(--shadow-color);
+  background-color: var(--background-lighter);
+}
+
+.primary-heading {
+  color: var(--primary-color);
+  margin-top: 0;
+  margin-bottom: 0.5rem;
+  font-size: 2rem;
+  text-align: center;
+  font-weight: 500;
+}
+
+.section-heading {
+  color: var(--primary-color);
+  font-size: 1.2rem;
+  margin-bottom: 1rem;
+  padding-bottom: 0.5rem;
+  border-bottom: 0.0625rem solid var(--primary-lighter-color);
+  font-weight: 500;
+}
+
+.centered-text {
+  text-align: center;
+  color: var(--text-medium);
+  margin-bottom: 0.5rem;
+}
+
+.standard-text {
+  line-height: 1.6;
+  color: var(--text-dark);
+  margin-bottom: 1rem;
+}
+
+.info-box {
+  background-color: var(--background-light);
+  padding: 1rem;
+  border-radius: 0.25rem;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+
+  p {
+    margin: 0.5rem 0;
+    color: var(--text-dark);
+  }
+}
+
+.details-grid {
+  display: flex;
+  justify-content: space-between;
+  gap: 1rem;
+
+  .detail-box {
+    flex: 1;
+    background-color: var(--background-light);
+    padding: 1rem;
+    border-radius: 0.25rem;
+    text-align: center;
+    box-shadow: 0 0.0625rem 0.1875rem var(--shadow-color);
+
+    .detail-value {
+      display: block;
+      color: var(--primary-color);
+      font-weight: bold;
+      font-size: 1.1rem;
+      margin-bottom: 0.25rem;
+    }
+
+    .detail-subtext {
+      display: block;
+      font-size: 0.8rem;
+      color: var(--primary-darker-color);
+    }
+  }
+}
+
+@media (max-width: 48rem) {
+  .details-grid {
+    flex-direction: column;
+  }
+}

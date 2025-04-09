@@ -1,0 +1,40 @@
+.page-container {
+  max-width: 75rem;
+  margin: 0 auto;
+  padding: 0 1rem;
+}
+
+.content-layout {
+  display: flex;
+  gap: 2rem;
+}
+
+.left-column {
+  flex: 1;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.right-column {
+  flex: 1;
+  display: flex;
+  justify-content: flex-start;
+}
+
+.narrower-container {
+  ::ng-deep .component-container {
+    max-width: 28.125rem;
+  }
+}
+
+@media (max-width: 64rem) {
+  .content-layout {
+    flex-direction: column;
+    gap: 1rem;
+  }
+
+  .left-column,
+  .right-column {
+    justify-content: center;
+  }
+}

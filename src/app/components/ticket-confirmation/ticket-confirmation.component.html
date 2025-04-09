@@ -1,0 +1,54 @@
+<div class="component-container confirmation-container">
+  <h1 class="primary-heading">
+    <mat-icon class="success-icon">check_circle</mat-icon>
+    Purchase Confirmed!
+  </h1>
+
+  <h3 class="section-heading">Venue Information</h3>
+  <mat-list>
+    <mat-list-item>
+      <mat-icon matListItemIcon>location_on</mat-icon>
+      <div matListItemTitle>Venue</div>
+      <div matListItemLine>{{ eventVenue }}</div>
+    </mat-list-item>
+
+    <mat-list-item>
+      <mat-icon matListItemIcon>event</mat-icon>
+      <div matListItemTitle>Date</div>
+      <div matListItemLine>July 26, 2025</div>
+    </mat-list-item>
+
+    <mat-list-item>
+      <mat-icon matListItemIcon>schedule</mat-icon>
+      <div matListItemTitle>Time</div>
+      <div matListItemLine>Doors: 5:30 PM | Show: 7:00 PM</div>
+    </mat-list-item>
+  </mat-list>
+
+  <h3 class="section-heading">Customer Information</h3>
+  <mat-list>
+    <mat-list-item>
+      <mat-icon matListItemIcon>confirmation_number</mat-icon>
+      <div matListItemTitle>{{ ticketQuantity }} Tickets</div>
+    </mat-list-item>
+
+    <mat-list-item>
+      <mat-icon matListItemIcon>person</mat-icon>
+      <div matListItemTitle>Name</div>
+      <div matListItemLine>{{ customerName }}</div>
+    </mat-list-item>
+
+    <mat-list-item>
+      <mat-icon matListItemIcon>email</mat-icon>
+      <div matListItemTitle>Email</div>
+      <div matListItemLine>{{ customerEmail }}</div>
+    </mat-list-item>
+  </mat-list>
+
+  <div class="info-box">
+    <p>
+      Thank you for your purchase! Your tickets have been emailed to you and are
+      also now available to you in My Tickets. Enjoy the show!
+    </p>
+  </div>
+</div>
